@@ -1,0 +1,16 @@
+file_format: "1"
+id: manuform
+Name: manuform
+type: shield
+url: https://github.com/jtcdbob/zmk-config-24/
+requires:
+  - nice_nano_v2
+exposes:
+  - i2c_oled
+features:
+  - keys
+  - display
+  - encoders
+siblings:
+  - manuform_left
+  - manuform_right
