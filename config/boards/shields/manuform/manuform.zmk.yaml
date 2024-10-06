@@ -1,6 +1,6 @@
 file_format: "1"
 id: manuform
-Name: manuform
+Name: manuform_ble
 type: shield
 url: https://github.com/jtcdbob/zmk-config-24/
 requires:
@@ -9,7 +9,6 @@ exposes:
   - i2c_oled
 features:
   - keys
-  - display
   - encoders
 siblings:
   - manuform_left
