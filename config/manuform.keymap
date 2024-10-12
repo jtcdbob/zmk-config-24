@@ -28,7 +28,7 @@
                 &kp LCTRL    &kp A    &kp S    &kp D    &kp F    &kp G         &kp H    &kp J    &kp K     &kp L     &kp SEMI   &kp SQT
                 &kp LSHFT    &kp Z    &kp X    &kp C    &kp V    &kp B         &kp N    &kp M    &kp COMMA &kp DOT   &kp FSLH   &kp RSHFT
                     &mo LOWER  &mo RAISE  &mt LALT SPACE &mt LGUI SPACE        &lt LOWER RET &lt RAISE BSPC   &kp C_VOL_DN  &kp C_VOL_UP
-                                            &kp C_MUTE  &mo NAV  &mo NAV       &kp RET  &mo NAV  &kp K_MUTE
+                                            &kp C_MUTE  &mo CONF  &mo NAV       &kp RET  &mo CONF  &kp K_MUTE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -82,9 +82,9 @@
 			display-name = "CONF";
 
 			bindings = <
-                &trans    &trans    &trans   &trans    &trans    &trans                   &trans    &trans    &trans    &trans    &trans    &trans
-                &trans    &trans    &trans   &trans    &trans    &trans                   &trans    &trans    &trans    &trans    &trans    &trans
-                &trans    &trans    &trans   &trans    &trans    &trans                   &trans    &trans    &trans    &trans    &trans    &trans
+                &sys_reset    &trans    &trans   &trans    &trans    &trans                   &trans    &trans    &trans    &trans    &trans    &sys_reset
+                &bootloader    &trans    &trans   &trans    &trans    &trans                   &trans    &trans    &trans    &trans    &trans    &bootloader
+                &bt BT_CLR      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                   &trans    &trans    &trans    &trans    &trans    &trans
                 &trans    &trans    &trans   &trans    &trans    &trans                   &trans    &trans    &trans    &trans    &trans    &trans
                                       &trans &trans     &trans   &trans                   &trans    &trans    &trans    &trans
                                              &trans     &trans   &trans                   &trans    &trans    &trans
