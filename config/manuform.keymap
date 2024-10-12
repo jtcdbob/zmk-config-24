@@ -11,8 +11,9 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define QWERTY 0
-#define LOWER 1
-#define RAISE 2
+#define LOWER  1
+#define RAISE  2
+#define NAV    3
 
 / {
     keymap {
@@ -60,5 +61,20 @@
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
+
+        navigation_layer {
+			display-name = "NAV";
+
+			bindings = <
+                &trans    &trans    &trans   &trans    &trans    &trans                   &trans    &trans    &trans    &trans    &trans    &trans
+                &trans    &trans    &trans   &trans    &trans    &trans                   &trans    &trans    &trans    &trans    &trans    &trans
+                &trans    &trans    &trans   &trans    &trans    &trans                   &trans    &trans    &trans    &trans    &trans    &trans
+                &trans    &trans    &trans   &trans    &trans    &trans                   &trans    &trans    &trans    &trans    &trans    &trans
+                                      &trans &trans    &trans    &trans                   &trans    &trans    &trans    &trans
+                                              &trans   &trans    &trans                   &trans    &trans    &trans
+			>;
+
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
+		};
     };
 };
